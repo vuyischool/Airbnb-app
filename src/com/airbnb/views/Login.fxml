@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.AuthController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Airbnb Property Rental System" textFill="#2c3e50">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label text="Login to your account" textFill="#7f8c8d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            
+            <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30;">
+               <padding>
+                  <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="usernameField" promptText="Username" prefWidth="300.0" />
+                  <PasswordField fx:id="passwordField" promptText="Password" prefWidth="300.0" />
+                  <Label fx:id="errorLabel" textFill="#e74c3c" visible="false" />
+                  <Button fx:id="loginButton" onAction="#handleLogin" text="Login" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14; -fx-pref-width: 300; -fx-pref-height: 35;" />
+                  <Separator prefWidth="300.0" />
+                  <Button fx:id="registerButton" onAction="#handleRegister" text="Don't have an account? Register" style="-fx-background-color: transparent; -fx-text-fill: #3498db;" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
+

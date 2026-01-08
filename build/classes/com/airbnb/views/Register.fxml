@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.AuthController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Create New Account" textFill="#2c3e50">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            
+            <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30;">
+               <padding>
+                  <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="regUsernameField" promptText="Username" prefWidth="300.0" />
+                  <TextField fx:id="regEmailField" promptText="Email" prefWidth="300.0" />
+                  <PasswordField fx:id="regPasswordField" promptText="Password" prefWidth="300.0" />
+                  <ComboBox fx:id="userTypeCombo" promptText="Select User Type" prefWidth="300.0" />
+                  <Label fx:id="regErrorLabel" textFill="#e74c3c" visible="false" />
+                  <Button fx:id="registerSubmitButton" onAction="#handleRegisterSubmit" text="Register" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 14; -fx-pref-width: 300; -fx-pref-height: 35;" />
+                  <Separator prefWidth="300.0" />
+                  <Button fx:id="backToLoginButton" onAction="#handleBackToLogin" text="Back to Login" style="-fx-background-color: transparent; -fx-text-fill: #3498db;" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
+

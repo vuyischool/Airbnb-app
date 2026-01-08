@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.BookingController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #34495e; -fx-padding: 15;">
+         <children>
+            <Button onAction="#handleBack" text="← Back" style="-fx-background-color: #95a5a6; -fx-text-fill: white;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="My Bookings" textFill="white">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox spacing="20.0" style="-fx-padding: 30;">
+         <children>
+            <VBox spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 20;">
+               <children>
+                  <Label text="Book a Property" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                  <ComboBox fx:id="propertyCombo" promptText="Select Property" prefWidth="400.0" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Check-in Date:" />
+                        <DatePicker fx:id="checkInDatePicker" />
+                        <Label text="Check-out Date:" />
+                        <DatePicker fx:id="checkOutDatePicker" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="totalPriceLabel" text="Total Price: $0.00" />
+                  <Button fx:id="bookButton" onAction="#handleBook" text="Book Now" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-pref-width: 150;" />
+                  <Label fx:id="bookingStatusLabel" textFill="#27ae60" visible="false" />
+               </children>
+            </VBox>
+            
+            <Separator />
+            
+            <VBox spacing="10.0">
+               <children>
+                  <Label text="My Booking History" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                  <TableView fx:id="bookingsTable" prefHeight="400.0">
+                     <columns>
+                        <TableColumn fx:id="propertyCol" text="Property" prefWidth="200.0" />
+                        <TableColumn fx:id="checkInCol" text="Check-in" prefWidth="120.0" />
+                        <TableColumn fx:id="checkOutCol" text="Check-out" prefWidth="120.0" />
+                        <TableColumn fx:id="totalPriceCol" text="Total Price" prefWidth="120.0" />
+                        <TableColumn fx:id="statusCol" text="Status" prefWidth="100.0" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
+

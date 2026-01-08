@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.PropertyDetailController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #34495e; -fx-padding: 15;">
+         <children>
+            <Button onAction="#handleBack" text="← Back" style="-fx-background-color: #95a5a6; -fx-text-fill: white;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Property Details" textFill="white">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true">
+         <content>
+            <VBox spacing="20.0" style="-fx-padding: 30;">
+               <children>
+                  <TextField fx:id="titleField" promptText="Title" />
+                  <TextArea fx:id="descriptionField" promptText="Description" prefRowCount="5" wrapText="true" />
+                  <TextField fx:id="locationField" promptText="Location" />
+                  <TextField fx:id="priceField" promptText="Price per night" />
+                  <TextField fx:id="imagePathField" promptText="Image path (optional)" />
+                  <TextField fx:id="availableDatesField" promptText="Available dates (comma-separated or 'all')" />
+                  
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button fx:id="saveButton" onAction="#handleSave" text="Save Property" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-pref-width: 150;" />
+                        <Button fx:id="deleteButton" onAction="#handleDelete" text="Delete Property" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-pref-width: 150;" visible="false" />
+                        <Button fx:id="bookButton" onAction="#handleBook" text="Book This Property" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-pref-width: 150;" visible="false" />
+                        <Button fx:id="reviewsButton" onAction="#handleViewReviews" text="View Reviews" style="-fx-pref-width: 150;" />
+                     </children>
+                  </HBox>
+                  
+                  <Label fx:id="statusLabel" textFill="#27ae60" visible="false" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
+

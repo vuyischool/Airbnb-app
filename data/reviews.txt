@@ -1,0 +1,6 @@
+rev001-a1b2-c3d4-e5f6-a7b8c9d0e1f2|a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d|68294d30-059e-4258-ac7d-65f25a17a729|5|Amazing apartment with great location and beautiful views. Highly recommended!|2025-12-16
+rev002-b2c3-d4e5-f6a7-b8c9d0e1f2a3|b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e|68294d30-059e-4258-ac7d-65f25a17a729|5|Luxurious villa with excellent amenities. The beach access was perfect!|2025-12-21
+rev003-c3d4-e5f6-a7b8-c9d0e1f2a3b4|c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f|68294d30-059e-4258-ac7d-65f25a17a729|4|Great cabin experience. Very peaceful and well-maintained.|2025-12-19
+rev004-d4e5-f6a7-b8c9-d0e1f2a3b4c5|d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a|68294d30-059e-4258-ac7d-65f25a17a729|4|Nice loft space with unique design. Location was convenient.|2025-12-23
+rev005-e5f6-a7b8-c9d0-e1f2a3b4c5d6|e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b|68294d30-059e-4258-ac7d-65f25a17a729|4|Lovely cottage by the lake. Perfect for a quiet getaway.|2025-12-18
+

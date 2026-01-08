@@ -1,0 +1,9 @@
+msg001-a1b2-c3d4-e5f6-a7b8c9d0e1f2|68294d30-059e-4258-ac7d-65f25a17a729|0948f302-6953-4edd-8cbc-5019c892df0f|Hi! I'm interested in booking your apartment. Is it available for December 10-15?|2025-12-08T10:30:00|true
+msg002-b2c3-d4e5-f6a7-b8c9d0e1f2a3|0948f302-6953-4edd-8cbc-5019c892df0f|68294d30-059e-4258-ac7d-65f25a17a729|Yes, those dates are available! Feel free to make a booking.|2025-12-08T11:15:00|true
+msg003-c3d4-e5f6-a7b8-c9d0e1f2a3b4|68294d30-059e-4258-ac7d-65f25a17a729|c12e3e6e-cd74-4084-b564-f7d9fc20fc47|Hello! Can you tell me more about the beachfront villa amenities?|2025-12-09T14:20:00|true
+msg004-d4e5-f6a7-b8c9-d0e1f2a3b4c5|c12e3e6e-cd74-4084-b564-f7d9fc20fc47|68294d30-059e-4258-ac7d-65f25a17a729|The villa includes private beach access, infinity pool, full kitchen, and parking. Would you like to book?|2025-12-09T15:45:00|true
+msg005-e5f6-a7b8-c9d0-e1f2a3b4c5d6|68294d30-059e-4258-ac7d-65f25a17a729|0948f302-6953-4edd-8cbc-5019c892df0f|Thank you for the wonderful stay! The apartment was perfect.|2025-12-16T09:00:00|false
+
+46ce6575-b5d1-4750-9744-441578930018|68294d30-059e-4258-ac7d-65f25a17a729|0948f302-6953-4edd-8cbc-5019c892df0f|ok when can you visit?|2025-12-08T22:17:30.2712858|false
+cd496e1e-9dc3-4d21-8407-6d9f6ce10c1b|0948f302-6953-4edd-8cbc-5019c892df0f|68294d30-059e-4258-ac7d-65f25a17a729|hi|2025-12-08T22:22:02.9397177|false
+c78feb2d-41f4-48f5-99e2-d39ab7f914ad|68294d30-059e-4258-ac7d-65f25a17a729|0948f302-6953-4edd-8cbc-5019c892df0f|hi|2025-12-08T22:24:38.0479512|false

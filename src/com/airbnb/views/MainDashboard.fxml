@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.DashboardController">
+   <top>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #34495e; -fx-padding: 15;">
+               <children>
+                  <Label text="Airbnb Property Rental System" textFill="white">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="userLabel" text="User" textFill="white" />
+                  <Button fx:id="logoutButton" onAction="#handleLogout" text="Logout" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+               </children>
+            </HBox>
+            
+            <HBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #ecf0f1; -fx-padding: 15;">
+               <children>
+                  <Button fx:id="searchButton" onAction="#handleSearchProperties" text="Search Properties" style="-fx-pref-width: 150;" />
+                  <Button fx:id="myBookingsButton" onAction="#handleMyBookings" text="My Bookings" style="-fx-pref-width: 150;" />
+                  <Button fx:id="messagesButton" onAction="#handleMessages" text="Messages" style="-fx-pref-width: 150;" />
+                  <Button fx:id="hostDashboardButton" onAction="#handleHostDashboard" text="Host Dashboard" style="-fx-pref-width: 150;" visible="false" />
+                  <Button fx:id="addPropertyButton" onAction="#handleAddProperty" text="Add Property" style="-fx-pref-width: 150;" visible="false" />
+                  <Button fx:id="adminDashboardButton" onAction="#handleAdminDashboard" text="Admin Dashboard" style="-fx-pref-width: 150;" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="20.0" style="-fx-padding: 30;">
+         <children>
+            <Label fx:id="welcomeLabel" text="Welcome to Airbnb System" textFill="#2c3e50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="roleLabel" text="Select an option from the menu above" textFill="#7f8c8d" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
+

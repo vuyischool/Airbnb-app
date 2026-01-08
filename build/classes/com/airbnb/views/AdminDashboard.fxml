@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.AdminDashboardController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #34495e; -fx-padding: 15;">
+         <children>
+            <Button onAction="#handleBack" text="← Back" style="-fx-background-color: #95a5a6; -fx-text-fill: white;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Admin Dashboard" textFill="white">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TabPane>
+         <tabs>
+            <Tab text="Statistics">
+               <content>
+                  <VBox spacing="20.0" style="-fx-padding: 30;">
+                     <children>
+                        <Label text="System Statistics" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+                        <HBox spacing="20.0">
+                           <children>
+                              <VBox spacing="10.0" style="-fx-background-color: #3498db; -fx-background-radius: 10; -fx-padding: 20; -fx-pref-width: 200;">
+                                 <children>
+                                    <Label fx:id="totalUsersLabel" text="Total Users: 0" textFill="white" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="10.0" style="-fx-background-color: #27ae60; -fx-background-radius: 10; -fx-padding: 20; -fx-pref-width: 200;">
+                                 <children>
+                                    <Label fx:id="totalPropertiesLabel" text="Total Properties: 0" textFill="white" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="10.0" style="-fx-background-color: #f39c12; -fx-background-radius: 10; -fx-padding: 20; -fx-pref-width: 200;">
+                                 <children>
+                                    <Label fx:id="totalBookingsLabel" text="Total Bookings: 0" textFill="white" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="10.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 10; -fx-padding: 20; -fx-pref-width: 200;">
+                                 <children>
+                                    <Label fx:id="totalRevenueLabel" text="Total Revenue: $0" textFill="white" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label fx:id="avgRatingLabel" text="Average Property Rating: 0.0" style="-fx-font-size: 14;" />
+                        <Label fx:id="activeBookingsLabel" text="Active Bookings: 0" style="-fx-font-size: 14;" />
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Users">
+               <content>
+                  <VBox spacing="10.0" style="-fx-padding: 20;">
+                     <children>
+                        <TableView fx:id="usersTable" prefHeight="500.0">
+                           <columns>
+                              <TableColumn fx:id="userIdCol" text="ID" prefWidth="200.0" />
+                              <TableColumn fx:id="usernameCol" text="Username" prefWidth="150.0" />
+                              <TableColumn fx:id="emailCol" text="Email" prefWidth="200.0" />
+                              <TableColumn fx:id="userTypeCol" text="Type" prefWidth="100.0" />
+                              <TableColumn fx:id="regDateCol" text="Registration Date" prefWidth="150.0" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Properties">
+               <content>
+                  <VBox spacing="10.0" style="-fx-padding: 20;">
+                     <children>
+                        <TableView fx:id="propertiesTable" prefHeight="500.0">
+                           <columns>
+                              <TableColumn fx:id="propIdCol" text="ID" prefWidth="150.0" />
+                              <TableColumn fx:id="propTitleCol" text="Title" prefWidth="200.0" />
+                              <TableColumn fx:id="propLocationCol" text="Location" prefWidth="150.0" />
+                              <TableColumn fx:id="propPriceCol" text="Price" prefWidth="100.0" />
+                              <TableColumn fx:id="propRatingCol" text="Rating" prefWidth="100.0" />
+                              <TableColumn fx:id="propOwnerCol" text="Owner" prefWidth="150.0" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Bookings">
+               <content>
+                  <VBox spacing="10.0" style="-fx-padding: 20;">
+                     <children>
+                        <TableView fx:id="bookingsTable" prefHeight="500.0">
+                           <columns>
+                              <TableColumn fx:id="bookingIdCol" text="ID" prefWidth="150.0" />
+                              <TableColumn fx:id="bookingPropertyCol" text="Property" prefWidth="200.0" />
+                              <TableColumn fx:id="bookingGuestCol" text="Guest" prefWidth="150.0" />
+                              <TableColumn fx:id="bookingCheckInCol" text="Check-in" prefWidth="120.0" />
+                              <TableColumn fx:id="bookingCheckOutCol" text="Check-out" prefWidth="120.0" />
+                              <TableColumn fx:id="bookingTotalCol" text="Total Price" prefWidth="120.0" />
+                              <TableColumn fx:id="bookingStatusCol" text="Status" prefWidth="100.0" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
+

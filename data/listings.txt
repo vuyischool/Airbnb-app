@@ -1,0 +1,6 @@
+a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d|Cozy Downtown Apartment|Beautiful modern apartment in the heart of the city with stunning views|New York, NY|120.0|0948f302-6953-4edd-8cbc-5019c892df0f|5.0|images/apartment1.jpg|2025-12-10,2025-12-20,2025-12-25,2026-01-01
+b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e|Beachfront Villa|Luxurious villa with private beach access and infinity pool|Miami, FL|250.0|c12e3e6e-cd74-4084-b564-f7d9fc20fc47|5.0|images/villa1.jpg|2025-12-15,2025-12-22,2026-01-05,2026-01-15
+c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f|Mountain Cabin Retreat|Rustic cabin surrounded by nature perfect for relaxation|Aspen, CO|180.0|0948f302-6953-4edd-8cbc-5019c892df0f|4.0|images/cabin1.jpg|2025-12-12,2025-12-28,2026-01-10
+d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a|Urban Loft Space|Stylish loft with high ceilings and industrial design|San Francisco, CA|150.0|c12e3e6e-cd74-4084-b564-f7d9fc20fc47|4.0|images/loft1.jpg|2025-12-18,2025-12-30,2026-01-08,2026-01-20
+e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b|Lakeside Cottage|Charming cottage by the lake with fishing dock|Seattle, WA|95.0|0948f302-6953-4edd-8cbc-5019c892df0f|4.0|images/cottage1.jpg|2025-12-14,2025-12-24,2026-01-03,2026-01-12
+

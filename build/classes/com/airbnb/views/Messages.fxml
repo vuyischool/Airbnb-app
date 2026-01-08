@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airbnb.controller.MessageController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #34495e; -fx-padding: 15;">
+         <children>
+            <Button onAction="#handleBack" text="← Back" style="-fx-background-color: #95a5a6; -fx-text-fill: white;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Messages" textFill="white">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox spacing="20.0" style="-fx-padding: 20;">
+         <children>
+            <VBox spacing="10.0" prefWidth="200.0">
+               <children>
+                  <Label text="Conversations" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+                  <ListView fx:id="conversationsList" prefHeight="500.0" />
+               </children>
+            </VBox>
+            
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="conversationLabel" text="Select a conversation" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+                  <ScrollPane fx:id="messagesScrollPane" fitToWidth="true" prefHeight="400.0">
+                     <content>
+                        <VBox fx:id="messagesContainer" spacing="10.0" style="-fx-padding: 10;" />
+                     </content>
+                  </ScrollPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="messageField" promptText="Type your message..." HBox.hgrow="ALWAYS" />
+                        <Button fx:id="sendButton" onAction="#handleSend" text="Send" style="-fx-background-color: #3498db; -fx-text-fill: white;" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
+
