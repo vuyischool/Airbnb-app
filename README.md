@@ -284,11 +284,8 @@ This project is created for educational purposes.
 
 ## 👤 Author
 
-vuyis
+Vuyisile Nqono
 
 ---
 
 **Built with JavaFX | SHA-256 Security | File-based Storage**
-
-#   A i r b n b - a p p  
- 
